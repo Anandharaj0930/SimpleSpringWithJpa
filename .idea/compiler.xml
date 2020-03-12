@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="samplespringapp" />
+        <module name="samplespringcommon" />
+        <module name="samplespringcore" />
+        <module name="samplespringinterface" />
+        <module name="samplespringpersistence" />
+        <module name="samplespringweb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="samplespringapp" target="1.8" />
+      <module name="samplespringcommon" target="1.8" />
+      <module name="samplespringcore" target="1.8" />
+      <module name="samplespringinterface" target="1.8" />
+      <module name="samplespringpersistence" target="1.8" />
+      <module name="samplespringweb" target="1.8" />
+      <module name="springpro" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

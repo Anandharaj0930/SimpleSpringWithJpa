@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/samplespringapp" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/samplespringcommon" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/samplespringcore" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/samplespringinterface" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/samplespringpersistence" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/samplespringweb" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/samplespringweb/src/main/java/test/spring/config/CSRFSecurityConfig.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samplespringweb/src/main/java/test/spring/config/CsrfHeaderFilter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samplespringweb/src/main/resources/log4j.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samplespringweb/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samplespringweb/src/test/dispatcher-servlet.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samplespringweb/src/test/web.xml" charset="UTF-8" />
+  </component>
+</project>

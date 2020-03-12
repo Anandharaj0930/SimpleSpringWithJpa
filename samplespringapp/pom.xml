@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springpro</artifactId>
+        <groupId>samplespringpro</groupId>
+        <version>${sample-parent-vesion}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <artifactId>samplespringapp</artifactId>
+    <version>${sample-vesion}</version>
+    <packaging>ear</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>samplespringpro</groupId>
+            <artifactId>samplespring-web</artifactId>
+            <version>${sample-vesion}</version>
+            <type>war</type>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-ear-plugin</artifactId>
+                <configuration>
+                    <earSourceDirectory>src/main/resources</earSourceDirectory>
+                    <defaultLibBundleDir>APP-INF/lib</defaultLibBundleDir>
+                    <modules>
+                        <webModule>
+                            <groupId>samplespringpro</groupId>
+                            <artifactId>samplespring-web</artifactId>
+                            <contextRoot>/testapp</contextRoot>
+                        </webModule>
+                    </modules>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>weblogic-maven-plugin</artifactId>
+                <configuration>
+                    <contextUri>mycontext</contextUri>
+                    <earName>${pom.artifactId}.ear</earName>
+                    <verbose>true</verbose>
+                   <earSourceIncludes>
+                        META-INF/application.xml
+                    </earSourceIncludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
