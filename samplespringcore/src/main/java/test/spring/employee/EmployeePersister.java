@@ -28,9 +28,9 @@ public class EmployeePersister implements IEmployeePersister {
         createEmployeeDTOIValidator.validate(createEmployeeDTO);
 
         Employee employee = buildEmplyeeEntity(createEmployeeDTO);
-        //Employee employeeEntity = employeeDAO.saveEmployee(employee);
-        LOGGER.debug("EmployeePersister >> createEmployee >> response : " + employee);
-        return persisterResBuilder.createEmployee(employee);
+        Employee employeeEntity = employeeDAO.saveEmployee(employee);
+        LOGGER.debug("EmployeePersister >> createEmployee >> response : " + employeeEntity);
+        return persisterResBuilder.createEmployee(employeeEntity);
     }
 
     private Employee buildEmplyeeEntity(CreateEmployeeDTO createEmployeeDTO) {
