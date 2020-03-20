@@ -55,7 +55,7 @@
         <version>${javaee.version}</version>
         <scope>provided</scope>
     </dependency>
-    <dependency>
+    <!--<dependency>
         <groupId>org.codehaus.jackson</groupId>
         <artifactId>jackson-core-asl</artifactId>
         <version>1.9.13</version>
@@ -64,7 +64,7 @@
         <groupId>org.codehaus.jackson</groupId>
         <artifactId>jackson-mapper-asl</artifactId>
         <version>1.9.13</version>
-    </dependency>
+    </dependency>-->
     <dependency>
         <groupId>log4j</groupId>
         <artifactId>log4j</artifactId>
